@@ -1,14 +1,57 @@
-:root{
-    --primary: #4225c4;
-    --facebook: #3b5999;
-    --instagram: #e4405f;
-    --twitter: #55acee;
-    --pinterest: #bd081c;
-    --linkedin: #0077B5;
-}
+/* NOSOTROS */
 
-body{
-    background: #63b060;
-    font-family: 'Poppins', sans-serif;
-    align-items: center;
+.nosotros {
+    display: grid;
+    gap: 10px;
+    padding: 30px;
+    grid-template-areas:
+        "encabezado"
+        "header"
+        "main"
+        "sidebar"
+        "footer";
+
+    .encabezado {
+        grid-area: encabezado;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    .nosotros .sidebar {
+        background: rgb(255, 123, 0);
+        text-align: center;
+        display: flex;
+        padding: 30px;
+
+        .widget-1,
+        .widget-2 {
+            height: 200px;
+            text-align: center;
+            display: flex;
+            margin-top: 30px;
+            align-items: center;
+            justify-content: center;
+
+            .footer {
+                background: #4f8c4d;
+                grid-column: span 3;
+                height: auto;
+                padding-top: 20px;
+            }
+        }
+    }
 }
