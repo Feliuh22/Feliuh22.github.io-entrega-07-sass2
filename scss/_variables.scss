@@ -1,7 +1,39 @@
+$primary: #4225c4;
 
-    $primary: #4225c4;
-    $facebook: #3b5999;
-    $instagram: #e4405f;
-    $twitter: #55acee;
-    $pinterest: #bd081c;
-    $linkedin: #0077B5;
+// Each
+
+@each $color in lista-colores {
+    .color-#{$color} {
+        background-color: $color;
+    }
+}
+
+// Maps
+
+$redes: (
+    facebook: #3b5999,
+    instagram: #e4405f,
+    twitter: #55acee,
+    pinterest: #bd081c,
+    linkedin: #0077B5,
+);
+
+@each $red,
+$color in $redes {
+    .red-#{$red} {
+        color: $color;
+    }
+}
+
+// Mixins
+
+@mixin size ($alto, $ancho, $margin){
+    height: $alto;
+    width: $ancho;
+    margin: $margin;
+    
+}
+
+div {
+    @include size()
+}

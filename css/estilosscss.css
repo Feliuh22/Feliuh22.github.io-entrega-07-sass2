@@ -1,3 +1,21 @@
+.color-lista-colores {
+  background-color: lista-colores; }
+
+.red-facebook {
+  color: #3b5999; }
+
+.red-instagram {
+  color: #e4405f; }
+
+.red-twitter {
+  color: #55acee; }
+
+.red-pinterest {
+  color: #bd081c; }
+
+.red-linkedin {
+  color: #0077B5; }
+
 body {
   background: #63b060;
   font-family: 'Poppins', sans-serif;
@@ -44,15 +62,15 @@ nav ul li a {
       height: 100px;
       text-align: center; }
       .footer .sociales ul li .facebook {
-        background: #3b5999; }
+        background: facebook; }
       .footer .sociales ul li .twitter {
-        background: #55acee; }
+        background: twitter; }
       .footer .sociales ul li .instagram {
-        background: #e4405f; }
+        background: instagram; }
       .footer .sociales ul li .pinterest {
-        background: #bd081c; }
+        background: pinterest; }
       .footer .sociales ul li .linkedin {
-        background: #0077B5; }
+        background: linkedin; }
       .footer .sociales ul li a {
         display: block;
         padding: 0 10px;
