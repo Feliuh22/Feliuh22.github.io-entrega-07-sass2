@@ -1,5 +1,12 @@
-@import "./variables";
+//generales
 
+@import "./variables";
 @import "./globales";
 
+//páginas
+@import "./hace-tu-pedido.scss";
+@import "./nosotros.scss";
+@import "./servicios.scss";
+
+//media queries
 @import "./media-queries.scss"

@@ -1,20 +1,67 @@
-.color-lista-colores {
-  background-color: lista-colores; }
+@charset "UTF-8";
+.color-#63b060 {
+  background-color: #63b060; }
+
+.color-#4f8c4d {
+  background-color: #4f8c4d; }
+
+.color-#fa9b15 {
+  background-color: #fa9b15; }
+
+.color-#243624 {
+  background-color: #243624; }
 
 .red-facebook {
-  color: #3b5999; }
+  color: #3b5999;
+  display: inline-block;
+  margin: 0 5px;
+  width: 100px;
+  height: 100px;
+  text-align: center; }
 
 .red-instagram {
-  color: #e4405f; }
+  color: #e4405f;
+  display: inline-block;
+  margin: 0 5px;
+  width: 100px;
+  height: 100px;
+  text-align: center; }
 
 .red-twitter {
-  color: #55acee; }
+  color: #55acee;
+  display: inline-block;
+  margin: 0 5px;
+  width: 100px;
+  height: 100px;
+  text-align: center; }
 
 .red-pinterest {
-  color: #bd081c; }
+  color: #bd081c;
+  display: inline-block;
+  margin: 0 5px;
+  width: 100px;
+  height: 100px;
+  text-align: center; }
 
 .red-linkedin {
-  color: #0077B5; }
+  color: #0077B5;
+  display: inline-block;
+  margin: 0 5px;
+  width: 100px;
+  height: 100px;
+  text-align: center; }
+
+.boton, .btn .btn-primary {
+  text-align: center;
+  background: #31384A;
+  color: #fff;
+  padding: 20px; }
+
+.btn {
+  padding: 1rem; }
+  .btn .btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary); }
 
 body {
   background: #63b060;
@@ -102,6 +149,218 @@ nav ul li a {
       text-decoration: none;
       color: #0df053;
       background: #fff; }
+
+/* HACÉ TU PEDIDO */
+.pedidos h2 {
+  background: rgba(223, 131, 18, 0.925);
+  width: 100%;
+  max-width: 90%;
+  margin: 1.6em;
+  display: grid;
+  text-align: center; }
+  .pedidos h2 form {
+    margin: auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    color: #999;
+    border-radius: 3px;
+    font-size: 12px;
+    box-sizing: border-box;
+    text-align: center; }
+    .pedidos h2 form .field {
+      border: solid 1px #ccc;
+      padding: 10px;
+      width: 200px; }
+    .pedidos h2 form:focus {
+      border-color: #4f8c4d; }
+      .pedidos h2 form:focus #boton {
+        text-align: center;
+        background: #31384A;
+        color: #fff;
+        padding: 20px; }
+      .pedidos h2 form:focus:hover {
+        cursor: pointer; }
+        .pedidos h2 form:focus:hover input,
+        .pedidos h2 form:focus:hover textarea {
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 7px;
+          box-sizing: border-box;
+          font-size: 17px;
+          border: none; }
+        .pedidos h2 form:focus:hover textarea {
+          min-height: 100px;
+          max-height: 200px; }
+
+/* NOSOTROS */
+.nosotros {
+  display: grid;
+  gap: 10px;
+  padding: 30px;
+  grid-template-areas: "encabezado" "header" "main" "sidebar" "footer"; }
+  .nosotros .encabezado {
+    grid-area: encabezado; }
+  .nosotros .header {
+    grid-area: header; }
+  .nosotros .main {
+    grid-area: main; }
+  .nosotros .sidebar {
+    grid-area: sidebar; }
+  .nosotros .footer {
+    grid-area: footer; }
+  .nosotros .nosotros .sidebar {
+    background: #ff7b00;
+    text-align: center;
+    display: flex;
+    padding: 30px; }
+    .nosotros .nosotros .sidebar .widget-1,
+    .nosotros .nosotros .sidebar .widget-2 {
+      height: 200px;
+      text-align: center;
+      display: flex;
+      margin-top: 30px;
+      align-items: center;
+      justify-content: center; }
+      .nosotros .nosotros .sidebar .widget-1 .footer,
+      .nosotros .nosotros .sidebar .widget-2 .footer {
+        background: #4f8c4d;
+        grid-column: span 3;
+        height: auto;
+        padding-top: 20px; }
+
+/* SERVICIOS */
+.container-all {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 50px;
+  text-align: center;
+  display: grid; }
+
+.title {
+  font-size: 40px;
+  padding-top: 0%;
+  text-align: center; }
+
+.container-all img {
+  width: 100%;
+  margin-right: 10px; }
+
+.contenido {
+  width: auto 90%;
+  max-width: 1000px; }
+
+.sidebar-02 {
+  text-align: center; }
+
+.content-02 > .article {
+  background: #0c6108;
+  padding: 20px;
+  margin-top: 10px;
+  color: white;
+  width: 100%;
+  margin: 10%; }
+
+.content-02 > .article p {
+  padding: 5px; }
+
+.container > img {
+  width: 100%;
+  margin-top: 100px; }
+
+.img .sidebar-02 {
+  width: auto 100%;
+  padding: 10%;
+  filter: drop-shadow(5px 5px 5px black); }
+
+aside img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; }
+
+/* FOOTER */
+.footer {
+  display: grid;
+  justify-items: center;
+  background: #243624;
+  color: #ffffffe4;
+  margin: 0 auto; }
+
+.box {
+  padding: 5%; }
+
+.sociales {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  padding: 5%; }
+
+.sociales ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 100px;
+  height: 100px;
+  text-align: center; }
+
+.sociales ul li a {
+  display: block;
+  padding: 0 10px;
+  background: rgba(35, 33, 33, 0.868);
+  color: #fff;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: .2s; }
+
+.sociales ul:hover a {
+  filter: blur(2px); }
+
+.sociales ul li a:hover {
+  transform: translateY(0.3px) scale(1.05);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+  filter: none; }
+
+.sociales ul li .facebook {
+  background: var(--facebook); }
+
+.sociales ul li .twitter {
+  background: var(--twitter); }
+
+.sociales ul li .instagram {
+  background: var(--instagram); }
+
+.sociales ul li .pinterest {
+  background: var(--pinterest); }
+
+.sociales ul li .linkedin {
+  background: var(--linkedin); }
+
+.map {
+  padding: 30px; }
+
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  background: white;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); }
+
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff; }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 320px) {

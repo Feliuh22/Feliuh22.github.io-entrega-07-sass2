@@ -2,7 +2,9 @@ $primary: #4225c4;
 
 // Each
 
-@each $color in lista-colores {
+$lista-colores: #63b060, #4f8c4d, rgb(250, 155, 21), #243624;
+
+@each $color in $lista-colores {
     .color-#{$color} {
         background-color: $color;
     }
@@ -22,15 +24,38 @@ $redes: (
 $color in $redes {
     .red-#{$red} {
         color: $color;
+        display: inline-block;
+        margin: 0 5px;
+        width: 100px;
+        height: 100px;
+        text-align: center;
     }
 }
 
 // Mixins
 
-@mixin size ($alto, $ancho, $margin){
+@mixin size ($alto, $ancho, $margin) {
     height: $alto;
     width: $ancho;
     margin: $margin;
-    
+
 }
 
+// Extend
+
+.boton {
+    text-align: center;
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+
+.btn {
+    padding: 1rem;
+
+    .btn-primary {
+        @extend .boton;
+        background-color: var(--primary);
+        border-color: var(--primary);
+    }
+}
