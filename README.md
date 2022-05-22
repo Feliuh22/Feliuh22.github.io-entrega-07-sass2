@@ -88,9 +88,51 @@ $color in $redes {
 ```
 [`volver al índice`](#índice)
 
+## MIXINS
+Utilicé @mixin para aplicar en encabezados de h1, h2 y h3 adaptandolo a media queries.
 
+```scss
+// en _variables.scss
+@mixin encabezados {
+    h1 {
+        font-size: 1.5em;
+    }
 
+    h2 {
+        font-size: 1.2em;
+    }
 
+    h3 {
+        font-size: 1em;
+    }
+}
+
+@mixin encabezados($tamaño) {
+    h1 {
+        font-size: $tamaño;
+    }
+
+    h2 {
+        font-size: $tamaño - 0.2;
+    }
+
+    h3 {
+        font-size: $tamaño - 0.5;
+    }
+}
+
+@include encabezados(2em);
+
+@include encabezados(1.5em);
+
+@media(min-width: 480px) {
+    @include encabezados(2em);
+}
+
+@media(min-width: 768px) {
+    @include encabezados(2.5em);
+}
+```
 
 # FAVICON
 ## Imagen y herramientas utilizadas
