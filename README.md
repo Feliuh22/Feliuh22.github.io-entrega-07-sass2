@@ -50,3 +50,15 @@ Modificaciones y agregados en el index:
 <meta name="description" content="Servicio de viandas, packs de viandas y opciones saludables">
 ```
 [`volver al índice`](#índice)
+
+# Uso de SASS
+
+## Extend
+Usé @extend para setear
+```scss
+//----  variables
+.btn-primary {
+        @extend .boton;
+        }
+``` 
+[`volver al índice`](#índice)
