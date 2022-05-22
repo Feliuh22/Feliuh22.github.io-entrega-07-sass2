@@ -87,3 +87,19 @@ $color in $redes {
 }
 ```
 [`volver al índice`](#índice)
+
+
+
+
+
+# FAVICON
+## Imagen y herramientas utilizadas
+Imagen de logo: <br>
+```html
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./pages/img/favicon.ico" type="image/x-icon" sizes="16x16">
+```
+
+La foto la convertí en .ico usando [Favicon Generator](https://www.favicon-generator.org) y los apliqué en los html.
+
+[`volver al índice`](#índice)
