@@ -62,3 +62,28 @@ Usé @extend para setear
         }
 ``` 
 [`volver al índice`](#índice)
+
+## MAPAS
+Use mapas para los colores de mis iconos en mis redes sociales dentro de todos mis footer en los html.
+```scss
+$redes: (
+    facebook: #3b5999,
+    instagram: #e4405f,
+    twitter: #55acee,
+    pinterest: #bd081c,
+    linkedin: #0077B5,
+);
+
+@each $red,
+$color in $redes {
+    .red-#{$red} {
+        color: $color;
+        display: inline-block;
+        margin: 0 5px;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+}
+```
+[`volver al índice`](#índice)
