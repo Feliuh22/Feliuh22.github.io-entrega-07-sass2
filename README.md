@@ -24,3 +24,29 @@ Meta tags base, los cuales se van a repetir y modificar mínimamente en el resto
 <title>Soluciones Nutricionales - Home</title>
 ```
 [`volver al índice`](#índice)
+
+## Resto de páginas
+
+Modificaciones y agregados en el index:
+- cambios en los títulos para tener relación con la página.
+- cambios en el meta name='title' para tener relación con la página.
+- cambios en el meta name='description' para tener relación con la página (ejemplificados abajo).
+- se agregaron los siguentes *keywords* en las paginas:
+
+```html
+<!-- nosotros.html -->
+<meta name="Keywords" content="Cocinero, Cocina, Equipo de cocina, Viandas, Viandas para empresas, Quienes somos">
+
+<meta name="description" content="Nuestro equipo de cocina, quienes somos">
+
+<!-- hace-tu-pedido.html -->
+<meta name="Keywords" content="Menú, Pedido, Precios accesibles, Viandas saludables, Viandas">
+
+<meta name="description" content="Generá tu pedido con las viandas que más te gusten">
+
+<!-- servicios.html -->
+<meta name="Keywords" content="Pack de viandas, Comida saludable, Viandas, Servicios">
+
+<meta name="description" content="Servicio de viandas, packs de viandas y opciones saludables">
+```
+[`volver al índice`](#índice)
