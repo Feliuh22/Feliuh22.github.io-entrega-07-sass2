@@ -94,8 +94,8 @@ h3 {
 .btn {
   padding: 1rem; }
   .btn .btn-primary {
-    background-color: var(--primary);
-    border-color: var(--primary); }
+    background-color: #4225c4;
+    border-color: #4225c4; }
 
 body {
   background: #63b060;
@@ -143,15 +143,15 @@ nav ul li a {
       height: 100px;
       text-align: center; }
       .footer .sociales ul li .facebook {
-        background: facebook; }
+        background: #3b5999; }
       .footer .sociales ul li .twitter {
-        background: twitter; }
+        background: #55acee; }
       .footer .sociales ul li .instagram {
-        background: instagram; }
+        background: #e4405f; }
       .footer .sociales ul li .pinterest {
-        background: pinterest; }
+        background: #bd081c; }
       .footer .sociales ul li .linkedin {
-        background: linkedin; }
+        background: #0077B5; }
       .footer .sociales ul li a {
         display: block;
         padding: 0 10px;
@@ -192,76 +192,90 @@ nav ul li a {
   margin: 1.6em;
   display: grid;
   text-align: center; }
-  .pedidos h2 form {
-    margin: auto;
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 10px 20px;
-    color: #999;
-    border-radius: 3px;
-    font-size: 12px;
-    box-sizing: border-box;
-    text-align: center; }
-    .pedidos h2 form .field {
-      border: solid 1px #ccc;
-      padding: 10px;
-      width: 200px; }
-    .pedidos h2 form:focus {
-      border-color: #4f8c4d; }
-      .pedidos h2 form:focus #boton {
-        text-align: center;
-        background: #31384A;
-        color: #fff;
-        padding: 20px; }
-      .pedidos h2 form:focus:hover {
-        cursor: pointer; }
-        .pedidos h2 form:focus:hover input,
-        .pedidos h2 form:focus:hover textarea {
-          width: 100%;
-          margin-bottom: 20px;
-          padding: 7px;
-          box-sizing: border-box;
-          font-size: 17px;
-          border: none; }
-        .pedidos h2 form:focus:hover textarea {
-          min-height: 100px;
-          max-height: 200px; }
+
+form {
+  margin: auto;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  color: #999;
+  border-radius: 3px;
+  font-size: 12px;
+  box-sizing: border-box;
+  text-align: center; }
+
+.field {
+  border: solid 1px #ccc;
+  padding: 10px;
+  width: 200px; }
+  .field:focus {
+    border-color: #4f8c4d; }
+
+#boton {
+  text-align: center;
+  background: #31384A;
+  color: #fff;
+  padding: 20px; }
+  #boton:hover {
+    cursor: pointer; }
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none; }
+  input textarea,
+  textarea textarea {
+    min-height: 100px;
+    max-height: 200px; }
 
 /* NOSOTROS */
 .nosotros {
   display: grid;
   gap: 10px;
   padding: 30px;
-  grid-template-areas: "encabezado" "header" "main" "sidebar" "footer"; }
-  .nosotros .encabezado {
-    grid-area: encabezado; }
-  .nosotros .header {
-    grid-area: header; }
-  .nosotros .main {
-    grid-area: main; }
+  grid-template-areas: "encabezado"
+ "header"
+ "main"
+ "sidebar"
+ "footer"; }
   .nosotros .sidebar {
-    grid-area: sidebar; }
-  .nosotros .footer {
-    grid-area: footer; }
-  .nosotros .nosotros .sidebar {
     background: #ff7b00;
     text-align: center;
     display: flex;
     padding: 30px; }
-    .nosotros .nosotros .sidebar .widget-1,
-    .nosotros .nosotros .sidebar .widget-2 {
-      height: 200px;
-      text-align: center;
-      display: flex;
-      margin-top: 30px;
-      align-items: center;
-      justify-content: center; }
-      .nosotros .nosotros .sidebar .widget-1 .footer,
-      .nosotros .nosotros .sidebar .widget-2 .footer {
-        background: #4f8c4d;
-        grid-column: span 3;
-        height: auto;
-        padding-top: 20px; }
+  .nosotros .widget-1,
+  .nosotros .widget-2 {
+    height: 200px;
+    text-align: center;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center; }
+
+.encabezado {
+  grid-area: encabezado; }
+
+.header {
+  grid-area: header; }
+
+.main {
+  grid-area: main; }
+
+.sidebar {
+  grid-area: sidebar; }
+
+.footer {
+  grid-area: footer; }
+
+.footer {
+  background: #4f8c4d;
+  grid-column: span 3;
+  height: auto;
+  padding-top: 20px; }
 
 /* SERVICIOS */
 .container-all {

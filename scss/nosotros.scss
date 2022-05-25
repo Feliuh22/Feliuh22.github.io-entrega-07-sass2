@@ -11,7 +11,25 @@
         "sidebar"
         "footer";
 
-    .encabezado {
+    .sidebar {
+        background: rgb(255, 123, 0);
+        text-align: center;
+        display: flex;
+        padding: 30px;
+    }
+
+    .widget-1,
+    .widget-2 {
+        height: 200px;
+        text-align: center;
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+    
+.encabezado {
         grid-area: encabezado;
     }
 
@@ -25,33 +43,16 @@
 
     .sidebar {
         grid-area: sidebar;
+
     }
 
     .footer {
         grid-area: footer;
     }
 
-    .nosotros .sidebar {
-        background: rgb(255, 123, 0);
-        text-align: center;
-        display: flex;
-        padding: 30px;
-
-        .widget-1,
-        .widget-2 {
-            height: 200px;
-            text-align: center;
-            display: flex;
-            margin-top: 30px;
-            align-items: center;
-            justify-content: center;
-
-            .footer {
-                background: #4f8c4d;
-                grid-column: span 3;
-                height: auto;
-                padding-top: 20px;
-            }
-        }
+    .footer {
+        background: #4f8c4d;
+        grid-column: span 3;
+        height: auto;
+        padding-top: 20px;
     }
-}
