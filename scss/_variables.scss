@@ -12,14 +12,13 @@ $lista-colores: #63b060, #4f8c4d, rgb(250, 155, 21), #243624;
 
 // Maps
 
-.redes {
-    $redes: (facebook: #3b5999,
-        instagram: #e4405f,
-        twitter: #55acee,
-        pinterest: #bd081c,
-        linkedin: #0077B5,
-    );
-}
+$redes: (
+    facebook: #3b5999,
+    instagram: #e4405f,
+    twitter: #55acee,
+    pinterest: #bd081c,
+    linkedin: #0077B5,
+);
 
 @each $red,
 $color in $redes {
@@ -77,7 +76,6 @@ $color in $redes {
 
 // Extend
 
-
 .boton {
     text-align: center;
     background: #31384A;
@@ -90,7 +88,7 @@ $color in $redes {
 
     .btn-primary {
         @extend .boton;
-        background-color: $primary;
-        border-color: $primary;
+        background-color: var(--primary);
+        border-color: var(--primary);
     }
 }

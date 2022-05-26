@@ -17,7 +17,6 @@
         display: flex;
         padding: 30px;
     }
-
     .widget-1,
     .widget-2 {
         height: 200px;
@@ -28,31 +27,31 @@
         justify-content: center;
     }
 }
-    
+
 .encabezado {
-        grid-area: encabezado;
-    }
+    grid-area: encabezado;
+}
 
-    .header {
-        grid-area: header;
-    }
+.header {
+    grid-area: header;
+}
 
-    .main {
-        grid-area: main;
-    }
+.main {
+    grid-area: main;
+}
 
-    .sidebar {
-        grid-area: sidebar;
+.sidebar {
+    grid-area: sidebar;
 
-    }
+}
 
-    .footer {
-        grid-area: footer;
-    }
+.footer {
+    grid-area: footer;
+}
 
-    .footer {
-        background: #4f8c4d;
-        grid-column: span 3;
-        height: auto;
-        padding-top: 20px;
-    }
+.footer {
+    background: #4f8c4d;
+    grid-column: span 3;
+    height: auto;
+    padding-top: 20px;
+}

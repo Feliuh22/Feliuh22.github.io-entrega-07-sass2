@@ -4,6 +4,10 @@ body {
     align-items: center;
 }
 
+.banner {
+    width: 100%;
+}
+
 /* NavBar */
 nav ul li a {
     background: #4f8c4d;
@@ -55,24 +59,25 @@ nav ul li a {
             height: 100px;
             text-align: center;
 
+
             .facebook {
-                background: $facebook;
+                background: #3b5999;
             }
 
             .twitter {
-                background: twitter;
+                background: #55acee;
             }
 
             .instagram {
-                background: instagram;
+                background: #e4405f;
             }
 
             .pinterest {
-                background: pinterest;
+                background: #bd081c;
             }
 
             .linkedin {
-                background: linkedin;
+                background: #0077B5;
             }
 
             a {
