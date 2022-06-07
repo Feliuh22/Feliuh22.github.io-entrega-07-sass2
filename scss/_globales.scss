@@ -24,6 +24,7 @@ nav ul li a {
     &:hover {
         color: rgb(250, 155, 21);
     }
+
     .btn-btn-primary {
         background: orange;
         background-color: rgb(234, 131, 13);
@@ -44,87 +45,90 @@ nav ul li a {
     margin: 0 auto;
 }
 
-    .box {
-        padding: 2%;
+.box {
+    padding: 2%;
 
-        h2, p {
-            font-size: 15px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-style: italic;
+    h2,
+    p {
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+    }
+}
+
+.sociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+
+    ul li {
+        display: inline-block;
+        margin: 0 5px;
+        width: 100px;
+        text-align: center;
+
+        .red-facebook {
+            background: #3b5999;
+            ;
+        }
+
+        .red-twitter {
+            background: #55acee;
+        }
+
+        .red-instagram {
+            background: #e4405f;
+        }
+
+        .red-pinterest {
+            background: #bd081c;
+        }
+
+        .red-linkedin {
+            background: #0077B5;
+        }
+
+        a {
+            display: block;
+            padding: 0 10px;
+            line-height: 100px;
+            color: #fff;
+            font-size: 24px;
+            box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+            transition: .2s;
         }
     }
 
-    .sociales {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 5%;
-
-        ul li {
-            display: inline-block;
-            margin: 0 5px;
-            width: 100px;
-            text-align: center;
-
-            a {
-                display: block;
-                padding: 0 10px;
-                line-height: 100px;
-                font-size: 24px;
-                box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-                transition: .2s;
-
-                .red-facebook {
-                    background: #3b5999;;
-                }
-
-                .red-twitter {
-                    background: #55acee;
-                }
-
-                .red-instagram {
-                    background: #e4405f;
-                }
-
-                .red-pinterest {
-                    background: #bd081c;
-                }
-
-                .red-linkedin {
-                    background: #0077B5;
-                }
-            }
-        }
-
-        ul:hover a {
-            filter: blur(2px);
-        }
-
-        ul li a:hover {
-            transform: translateY(.3px) scale(1.05);
-            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-            filter: none;
-        }
+    ul:hover a {
+        filter: blur(2px);
     }
 
-    .map {
-        padding: 20px;
+    ul li a:hover {
+        transform: translateY(.3px) scale(1.05);
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+        filter: none;
     }
+}
 
-    .btn-wsp {
-        position: fixed;
-        width: 55px;
-        height: 55px;
-        line-height: 55px;
-        background: white;
-        bottom: 30px;
-        right: 30px;
-        border-radius: 50px;
-        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+.map {
+    padding: 20px;
+}
 
-        &:hover {
-            text-decoration: none;
-            color: #0df053;
-            background: #fff;
-        }
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    background: white;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+        text-decoration: none;
+        color: #0df053;
+        background: #fff;
     }
+}
