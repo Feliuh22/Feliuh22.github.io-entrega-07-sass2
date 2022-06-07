@@ -1,14 +1,4 @@
-$primary: #4225c4;
-
-// Each
-
-$lista-colores: #63b060, #4f8c4d, rgb(250, 155, 21), #243624;
-
-@each $color in $lista-colores {
-    .color-#{$color} {
-        background-color: $color;
-    }
-}
+$primary: #ea830d;
 
 // Maps
 
@@ -20,6 +10,7 @@ $redes: (
     linkedin: #0077B5,
 );
 
+// Each
 @each $red,
 $color in $redes {
     .red-#{$red} {
@@ -33,20 +24,6 @@ $color in $redes {
 }
 
 // Mixins
-
-@mixin encabezados {
-    h1 {
-        font-size: 1.5em;
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
-
-    h3 {
-        font-size: 1em;
-    }
-}
 
 @mixin encabezados($tamaño) {
     h1 {
@@ -62,17 +39,7 @@ $color in $redes {
     }
 }
 
-@include encabezados(2em);
-
 @include encabezados(1.5em);
-
-@media(min-width: 480px) {
-    @include encabezados(2em);
-}
-
-@media(min-width: 768px) {
-    @include encabezados(2.5em);
-}
 
 // Extend
 

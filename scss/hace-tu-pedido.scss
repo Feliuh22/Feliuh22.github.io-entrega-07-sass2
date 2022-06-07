@@ -1,12 +1,17 @@
 /* HACÉ TU PEDIDO */
 
-.pedidos h2 {
-    background: rgba(223, 131, 18, 0.925);
-    width: 100%;
-    max-width: 90%;
-    margin: 1.6em;
-    display: grid;
-    text-align: center;
+.pedidos {
+
+    padding: 10px;
+
+    h2 {
+        background: rgba(223, 131, 18, 0.925);
+        width: 100%;
+        max-width: 90%;
+        margin: 1.6em;
+        display: grid;
+        text-align: center;
+    }
 
     form {
         margin: auto;
@@ -25,34 +30,37 @@
             width: 200px;
         }
 
-        &:focus {
+        .field :focus {
             border-color: #4f8c4d;
+        }
 
-            #boton {
-                text-align: center;
-                background: #31384A;
-                color: #fff;
-                padding: 20px;
-            }
+        label, input,
+        email number {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 7px;
+            box-sizing: border-box;
+            font-size: 17px;
+            border: none;
+            justify-content: center;
+            max-height: 200px;
+        }
 
-            &:hover {
-                cursor: pointer;
+        textarea{
+            min-height: 100px;
+            max-height: 200px;
+        }
 
-                input,
-                textarea {
-                    width: 100%;
-                    margin-bottom: 20px;
-                    padding: 7px;
-                    box-sizing: border-box;
-                    font-size: 17px;
-                    border: none;
-                }
+        #boton {
+            text-align: center;
+            background: #31384A;
+            color: #fff;
+            padding: 20px;
+            width: 50%;
+        }
 
-                textarea {
-                    min-height: 100px;
-                    max-height: 200px;
-                }
-            }
+        #boton:hover {
+            cursor: pointer;
         }
     }
 }

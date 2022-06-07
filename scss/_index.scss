@@ -1,9 +1,9 @@
 .banner {
     width: 100%;
 }
-.content mx-auto {
-    justify-content: center;
-}
+
+
+
 .navbar {
     min-width: 90px;
 }
@@ -12,19 +12,29 @@
     padding: .625rem 1.25rem !important;
 }
 
-.text-primary {
-    color: var(--primary) !important;
-    min-height: var(--primary) !important;
-}
 
-.bg-primary {
-    background-color: var(--primary) !important;
+
+.btn-btn-primary {
+    background-color: rgb(234, 131, 13);
 }
 
 .content {
     max-width: 1200px;
 }
 
-#container {
+.container {
     height: 900px;
+    justify-content: center;
+
+    .content-mx-auto {
+        justify-content: center;
+    }
+    .text-primary {
+        color: var(--primary) !important;
+        min-height: var(--primary) !important;
+    }
+
+    .bg-primary {
+        color: rgb(234, 131, 13);
+    }
 }

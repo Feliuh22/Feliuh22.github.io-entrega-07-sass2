@@ -1,6 +1,11 @@
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 320px) {
+    .banner {
+        width: 100%;
+        justify-content: center;
+    }
+
     .nosotros {
         display: flex;
         width: 100%;
@@ -17,15 +22,26 @@
         width: 100%;
     }
 
-    .title {
-        font-size: 30px;
-        padding-top: 0%;
-        color: #31384A;
-        text-decoration-style: dotted;
-    }
-
-    .container-all img {
+    .container-all {
         width: 100%;
+        align-items: center;
+
+        .title {
+            font-size: 30px;
+            padding-top: 0%;
+            text-decoration-line: overline;
+            text-align: center;
+
+            .img {
+                width: 100%;
+                align-items: center;
+            }
+
+            .content-02 {
+                align-items: center;
+                width: 100%;
+            }
+        }
     }
 
     .nosotros .caja {
@@ -36,6 +52,7 @@
 
     .footer {
         text-align: center;
+        width: 100%;
 
         .sociales {
             display: block;
@@ -46,6 +63,13 @@
 }
 
 @media screen and (min-width: 480px) {
+    @include encabezados(2em);
+
+    .banner {
+        width: 100%;
+        justify-content: center;
+    }
+
     .nosotros {
         display: flex;
         width: 100%;
@@ -55,6 +79,21 @@
             width: 100%;
             text-align: center;
             display: block;
+
+            .img {
+                justify-content: center;
+
+                .sidebar {
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+        }
+
+        .subcontainer {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
         }
     }
 
@@ -62,15 +101,21 @@
         width: 100%;
     }
 
-    .title {
-        font-size: 30px;
-        padding-top: 0%;
-        color: #112b6c;
-        text-decoration-line: overline;
-    }
-
-    .container-all img {
+    .container-all {
         width: 100%;
+        align-items: center;
+
+        .title {
+            font-size: 30px;
+            padding-top: 0%;
+            text-decoration-line: overline;
+            text-align: center;
+
+            .img {
+                width: 100%;
+                align-items: center;
+            }
+        }
     }
 
     .nosotros .caja {
@@ -81,6 +126,7 @@
 
     .footer {
         text-align: center;
+        width: 100%;
     }
 
     .sociales {
@@ -88,19 +134,128 @@
         flex-direction: row-reverse;
         width: 100%;
     }
+
+    .pedidos form textarea {
+        width: 100%;
+    }
+
+    .subcontainer {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 768px) {
+    @include encabezados(2.5em);
+
+    .banner {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nosotros {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+
+        .caja {
+            width: 100%;
+            text-align: center;
+            display: block;
+
+            .img {
+                justify-content: center;
+
+                .sidebar {
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .footer {
+        text-align: center;
+        width: 100%;
+    }
+
+    .container-all {
+        width: 100%;
+
+        .title {
+            font-size: 30px;
+            padding-top: 0%;
+            text-decoration-line: overline;
+            text-align: center;
+
+            .img {
+                width: 100%;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .subcontainer {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    @include encabezados(2.5em);
+
+    .banner {
+        width: 100%;
+        justify-content: center;
+    }
+
     .nosotros {
         display: flex;
         width: 100%;
         flex-direction: column;
 
-    .caja {
-    width: 100%;
-    text-align: center;
-    display: block;
-}
-}
-}
+        .caja {
+            width: 100%;
+            text-align: center;
+            display: block;
 
+            .img {
+                justify-content: center;
+
+                .sidebar {
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .footer {
+        text-align: center;
+        width: 100%;
+    }
+
+    .container-all {
+        width: 100%;
+
+        .title {
+            font-size: 30px;
+            padding-top: 0%;
+            text-decoration-line: overline;
+            text-align: center;
+
+            .img {
+                width: 100%;
+            }
+        }
+    }
+
+    .subcontainer {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+}
